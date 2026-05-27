@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hAITour: Zur Alb und Entlang 🚴</title>
+  <style>
+    :root {
+      --green: #2d6a4f;
+      --lightgreen: #52b788;
+      --bg: #f0faf4;
+      --card: #ffffff;
+      --text: #1b1b1b;
+      --muted: #555;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+    header {
+      background: linear-gradient(135deg, var(--green), var(--lightgreen));
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 0.4rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card h2 { color: var(--green); margin-bottom: 0.8rem; }
+    .card p, .card li { color: var(--muted); line-height: 1.6; }
+    .card ul { padding-left: 1.2rem; }
+    .map-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.4rem;
+      background: var(--green);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .map-btn:hover { background: var(--lightgreen); }
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .section-card {
+      background: var(--bg);
+      border: 1px solid #c8e6c9;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .section-card h3 { color: var(--green); margin-bottom: 0.4rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 0.8rem; }
+    th { background: var(--green); color: white; padding: 0.5rem 0.8rem; text-align: left; }
+    td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #e0e0e0; }
+    tr:hover td { background: #f1faf5; }
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚴‍♂️ hAITour: Zur Alb und Entlang 🌿</h1>
+  <p>Hybrid AI Tour – dokumentiert mit Karten, Tracks &amp; GitHub Pages</p>
+  <div class="badges">
+    <img src="https://img.shields.io/badge/Status-In%20Planung%20🔜-orange?style=flat-square" alt="Status" />
+    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT" />
+    <img src="https://img.shields.io/badge/powered%20by-AI%20%26%20Rad-blueviolet?style=flat-square" alt="AI" />
+  </div>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>🗺️ Route auf einen Blick</h2>
+    <p>Eine Fahrradtour <strong>zur Alb und entlang des Flusses</strong> – Natur, Flusslandschaft und frische Luft pur.</p>
+    <a class="map-btn" href="#" target="_blank">🗺️ Route auf Google Maps</a>
+    <p style="margin-top:0.6rem; font-size:0.85rem;">*(Link wird nach Routenplanung ergänzt)*</p>
+  </div>
+
+  <div class="card">
+    <h2>🚴 Tourabschnitte</h2>
+    <div class="section-grid">
+      <div class="section-card">
+        <h3>Teil 1 – Start &amp; Anfahrt</h3>
+        <p>Einrollen, erste Kilometer Richtung Alb 🌄</p>
+      </div>
+      <div class="section-card">
+        <h3>Teil 2 – Entlang der Alb</h3>
+        <p>Flussbegleitung, Radwege, Natur 🌊🌳</p>
+      </div>
+      <div class="section-card">
+        <h3>Teil 3 – Finale &amp; Rückweg</h3>
+        <p>Zielpunkt und Heimweg 🏁</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📥 GPX-Tracks</h2>
+    <table>
+      <thead>
+        <tr><th>Abschnitt</th><th>GPX Download</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>🚴 Gesamtroute</td><td><a href="tracks/route_zur_alb_entlang.gpx">⬇️ GPX</a></td></tr>
+        <tr><td>Teil 1 – Start &amp; Anfahrt</td><td><a href="tracks/teil1_start.gpx">⬇️ GPX</a></td></tr>
+        <tr><td>Teil 2 – Entlang der Alb</td><td><a href="tracks/teil2_alb.gpx">⬇️ GPX</a></td></tr>
+        <tr><td>Teil 3 – Finale &amp; Rückweg</td><td><a href="tracks/teil3_finale.gpx">⬇️ GPX</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🎬 Video-Highlights</h2>
+    <p>*(Videos werden nach der Tour hier ergänzt)*</p>
+  </div>
+
+  <div class="card">
+    <h2>🖼️ Fotogalerie</h2>
+    <p>*(Fotos werden nach der Tour ergänzt)*</p>
+  </div>
+
+  <div class="card">
+    <h2>⌚ Fitnessdaten</h2>
+    <p>*(Smartwatch-Screenshots werden nach der Tour ergänzt)*</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>🤖 Hybrid AI Tour &bull; Erstellt mit GitHub Pages &bull; MIT Lizenz</p>
+  <p style="margin-top:0.4rem;">
+    <a href="https://www.buymeacoffee.com/highfish" target="_blank">
+      <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" width="100" height="24" alt="Buy me a coffee" />
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
